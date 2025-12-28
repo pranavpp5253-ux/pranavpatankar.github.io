@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grand Shoes Store</title>
+
+<style>
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+    background: #f4f6f8;
+    color: #333;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #222;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: orange;
+    color: black;
+}
+
+/* ===== HERO ===== */
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #000, #444);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: orange;
+    color: black;
+}
+
+/* ===== CARD LAYOUT ===== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>👟 Grand Shoes Store</h1>
+    <p>Stylish | Comfortable | Affordable</p>
+</header>
+
+<nav>
+    <a href="">Home</a>
+    <a href="Product.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="Contact.html">Contact</a>
+</nav>
+
+<div class="hero">
+    <h1>Step Into Style</h1>
+    <p>Latest Shoes Collection 2025</p>
+    <button class="btn">Shop Now</button>
+</div>
+
+<section>
+    <h2>🛒 Our Shoes Collection</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="nike.jpg" alt="Nike Shoes">
+            <h3>Nike Sports Shoes</h3>
+            <p>Price: ₹3,999</p><br>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" alt="Adidas Shoes">
+            <h3>Adidas Sneakers</h3>
+            <p>Price: ₹4,499</p><br>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a" alt="Puma Shoes">
+            <h3>Puma Casual Shoes</h3>
+            <p>Price: ₹2,999</p><br>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>📞 Contact Us</h2>
+    <p>Email: grandshoes@gmail.com</p>
+    <p>Phone: +91 9876543210</p>
+</section>
+
+<footer>
+    <p>© 2025 Grand Shoes Store</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Products</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background:#f2f2f2;
+        }
+
+        /* ===== NAVBAR ===== */
+        nav{
+            background:#000;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-size:16px;
+        }
+
+        nav a:hover{
+            text-decoration:underline;
+        }
+
+        header{
+            background:linear-gradient(135deg,#000,#444);
+            color:white;
+            text-align:center;
+            padding:30px 15px;
+        }
+
+        header h1{
+            margin-bottom:5px;
+            font-size:36px;
+        }
+
+        header p{
+            font-size:16px;
+            opacity:0.9;
+        }
+
+        section{
+            max-width:1200px;
+            margin:auto;
+            padding:40px 20px;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:30px;
+            font-size:28px;
+            color:#222;
+        }
+
+        .products{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap:25px;
+        }
+
+        .product{
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 6px 15px rgba(0,0,0,0.15);
+            transition:transform 0.3s;
+        }
+
+        .product:hover{
+            transform:translateY(-8px);
+        }
+
+        .product img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .product-content{
+            padding:20px;
+            text-align:center;
+        }
+
+        .product-content h3{
+            margin-bottom:8px;
+            font-size:20px;
+        }
+
+        .product-content p{
+            font-size:14px;
+            color:#666;
+            margin-bottom:10px;
+        }
+
+        .price{
+            font-size:18px;
+            font-weight:bold;
+            margin-bottom:15px;
+            color:#000;
+        }
+
+        button{
+            background:#000;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:25px;
+            cursor:pointer;
+            font-size:14px;
+        }
+
+        button:hover{
+            background:#444;
+        }
+
+        footer{
+            background:#000;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ADDED ===== -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="Product.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="Contact.html">Contact</a>
+</nav>
+
+<header>
+    <h1>👟 Grand Shoe Store</h1>
+    <p>Premium Footwear Collection</p>
+</header>
+
+<section>
+    <h2>Our Shoe Products</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Running Shoes">
+            <div class="product-content">
+                <h3>Running Shoes</h3>
+                <p>Lightweight shoes designed for daily running and workouts.</p>
+                <div class="price">₹2,999</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Casual Shoes">
+            <div class="product-content">
+                <h3>Casual Shoes</h3>
+                <p>Stylish and comfortable shoes for everyday wear.</p>
+                <div class="price">₹2,199</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="sport shoes.jpg" alt="Sports Shoes">
+            <div class="product-content">
+                <h3>Sports Shoes</h3>
+                <p>Durable sports shoes with strong grip and support.</p>
+                <div class="price">₹3,499</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a" alt="Formal Shoes">
+            <div class="product-content">
+                <h3>Formal Shoes</h3>
+                <p>Elegant formal shoes perfect for office and meetings.</p>
+                <div class="price">₹2,799</div>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Urban Shoe Store | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
